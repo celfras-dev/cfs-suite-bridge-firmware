@@ -1,10 +1,10 @@
 {
   "schema": 1,
-  "generated": "2026-08-28T09:46:29Z",
+  "generated": "2026-08-28T10:04:37Z",
   "manifest_sig": null,
   "products": {
     "CFS-NANAODAP-BRIDGE": {
-      "latest": "2.1.13",
+      "latest": "2.1.14",
       "releases": [
         {
           "version": "2.1.10",
@@ -45,6 +45,17 @@
           "url": "https://raw.githubusercontent.com/celfras-dev/cfs-suite-bridge-firmware/main/CFS-NANAODAP-BRIDGE_V2.1.13_IMG.bin",
           "size": 21656,
           "sha256": "e9e1ea4325f497a1adf04392ff7893c82b53c31ca370335966626ac5dfc9e766",
+          "notes": "",
+          "sig_alg": null,
+          "key_id": null,
+          "sig": null
+        },
+        {
+          "version": "2.1.14",
+          "cmd_set": "2.3.0",
+          "url": "https://raw.githubusercontent.com/celfras-dev/cfs-suite-bridge-firmware/main/CFS-NANAODAP-BRIDGE_V2.1.14_IMG.bin",
+          "size": 21656,
+          "sha256": "99228ca45167bd4ff36aca295402a5d9efa090902611d8c117057a20c6c125d0",
           "notes": "",
           "sig_alg": null,
           "key_id": null,
