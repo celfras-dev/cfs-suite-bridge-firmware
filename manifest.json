@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generated": "2026-08-28T05:35:03Z",
+  "generated": "2026-08-28T08:07:22Z",
   "manifest_sig": null,
   "products": {
     "CFS-NANAODAP-BRIDGE": {
@@ -42,7 +42,7 @@
       ]
     },
     "CFS-NANAODAP-PCAPP": {
-      "latest": "1.0.0",
+      "latest": "1.1.0",
       "url": "https://github.com/celfras-dev/cfs-suite-bridge-firmware",
       "notes": ""
     }
