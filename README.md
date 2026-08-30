@@ -19,7 +19,7 @@ an `UPDATE BRIDGE FW` button. Nothing is ever installed without a click.
 The endpoint is configurable, so this repository is not baked into the app:
 
 ```bash
-NANAODAP_UPDATE_URL=https://raw.githubusercontent.com/celfras-dev/cfs-suite-bridge-firmware/main/manifest.json
+NANAODAP_UPDATE_URL=https://raw.githubusercontent.com/celfras-dev/cfs-suite-bridge-nanaodap/main/manifest.json
 ```
 
 ## About the `_IMG.bin` files
@@ -66,7 +66,7 @@ version, size and hash cannot disagree with the file they describe:
 
 ```bash
 python tools/mkmanifest.py \
-  --base-url https://raw.githubusercontent.com/celfras-dev/cfs-suite-bridge-firmware/main \
+  --base-url https://raw.githubusercontent.com/celfras-dev/cfs-suite-bridge-nanaodap/main \
   CFS-NANAODAP-BRIDGE_V<x.y.z>_IMG.bin \
   -o manifest.json
 ```
