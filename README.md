@@ -39,6 +39,26 @@ match it. Images are **not signed yet** — the manifest and the image header
 both reserve the fields for it, currently null. Until signing is switched on,
 the trust boundary is HTTPS and this repository's write access.
 
+## If the app refuses to update your board
+
+From **v2.1.15** the PC app asks the board which BOARD it is before it sends
+anything, and refuses rather than guess. There is now more than one bridge
+board and they share a USB VID:PID, so sending the wrong binary was possible
+and only the bootloader's own check stopped it.
+
+A board whose **bootloader** predates command set 2.4.0 cannot answer that
+question, so it is refused an update over USB. This is not a fault in the
+board and nothing is wrong with it -- OTA never replaces the bootloader, so a
+board updated only over USB still has its original one.
+
+The fix is a one-time SWD flash with that board's `FACTORY` image, which
+carries both the bootloader and the app. After that, USB updates work as
+before. `FACTORY` images are not published here; they come from the firmware
+build.
+
+`update_fw.py --status` prints a `board` line when the board can answer, and
+the tool says which version it needs when it cannot.
+
 ## Publishing a new version
 
 The manifest is generated from the images rather than hand-edited, so the
